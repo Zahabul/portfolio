@@ -15,6 +15,7 @@
   align-items: center;
   z-index: 1000;
   gap: 3.2rem;
+  overflow-x: hidden;
 }
 
 .user {

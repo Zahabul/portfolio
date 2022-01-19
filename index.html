@@ -79,9 +79,11 @@
             Consequatur Veritatis Quo. Asperiores Mollitia Tenetur Rem
             Cupiditate, Quia Blanditiis. At, Perspiciatis.
           </p>
-          <button class="btn" id="#about">
-            About me <i class="fas fa-user btn-icon"></i>
-          </button>
+          <a href="#about">
+            <button class="btn">
+              About me <i class="fas fa-user btn-icon"></i>
+            </button>
+          </a>
         </div>
       </div>
     </section>
@@ -277,10 +279,20 @@
             </div>
           </div>
           <div class="contact-form">
-            <form action="#" class="form">
+            <form action="post" class="form" netlify>
               <input type="text" class="name" placeholder="Name" />
-              <input type="email" class="user-email" placeholder="Email" />
-              <input type="text" class="project" placeholder="Project" />
+              <input
+                type="email"
+                class="user-email"
+                placeholder="Email"
+                name="email"
+              />
+              <input
+                type="text"
+                class="project"
+                placeholder="Project"
+                name="project"
+              />
               <textarea
                 name="message"
                 id="message"
@@ -289,7 +301,7 @@
                 class="message"
                 placeholder="Message"
               ></textarea>
-              <button class="btn" type="submit">
+              <button class="btn" type="submit" name="send">
                 send <i class="fas fa-paper-plane"></i>
               </button>
             </form>
